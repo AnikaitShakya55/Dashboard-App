@@ -1,9 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import './DashBoardContent.css';
-import Image from 'next/image'
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import leftIcon from '../../public/Assests/left-arrow-5.png'
+
 
 
 const currentCustomers = [

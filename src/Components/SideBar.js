@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import dashBoardIcon from "../../public/Assests/setting1.png";
-import keyIcon from '../../public/Assests/Key-square.png'
+import keyIcon from '../../public/Assests/key-square.png'
 import productIcon from '../../public/Assests/3d-square 1.png'
 import incomeIcon from '../../public/Assests/wallet-money 2.png';
 import promoteIcon from '../../public/Assests/discount-shape 1.png';
@@ -31,7 +31,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="#"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple  w-60 hover:text-white rounded-lg"
           >
             <Image src={keyIcon} className='size-5' />
             <span className="ml-2">Dashboard</span>
@@ -45,7 +45,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="#"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple  w-60 hover:text-white rounded-lg"
           >
             <Image src={productIcon} className='size-5' />
            
@@ -59,7 +59,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="/dashboard"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple   w-60 hover:text-white rounded-lg"
           >
             <FcCustomerSupport className="size-6" />
            
@@ -73,7 +73,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="/dashboard"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple  w-60 hover:text-white rounded-lg"
           >
             <Image src={incomeIcon} className='size-5' />
            
@@ -91,7 +91,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="/dashboard"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple   w-60 hover:text-white rounded-lg"
           >
             <Image src={promoteIcon} className='size-5' />
            
@@ -104,7 +104,7 @@ const Sidebar = () => {
         <li className="flex items-center mb-4 w-[250px] h-[46px ]">
           <Link
             href="/dashboard"
-            className="flex items-center py-2 px-4 hover:bg-customPurple hover:text-slate-800  w-60 hover:text-white rounded-lg"
+            className="flex items-center py-2 px-4 hover:bg-customPurple  w-60 hover:text-white rounded-lg"
           >
             <Image src={helpIcon} className='size-5' />
            
