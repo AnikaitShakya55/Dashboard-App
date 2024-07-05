@@ -138,8 +138,8 @@ const DashBoardContent = () => {
               <th className="pl-7 pt-8">Company</th>
 
               <th className="pl-7 pt-8">Phone Number</th>
-              <th className="pl-0 pt-8">Email</th>
-              <th className="pl-7 pt-8">Country</th>
+              <th className="pt-8 -ml-10">Email</th>
+              <th className="pt-8">Country</th>
               <th className="pl-7 pt-8">Status</th>
             </tr>
           </thead>

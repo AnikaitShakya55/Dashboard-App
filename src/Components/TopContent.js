@@ -19,7 +19,7 @@ const TopContent = () => {
         <div className='flex items-center'>
            
         
-        <h1 className='text-2xl  font-semibold pl-20 font-sans flex items-start  '>Hello Evnao 
+        <h1 className='text-2xl  font-semibold pl-20 font-sans flex items-start  '>Hello Evano 
         {/* <FaHandshake className='ml-2 text-4xl' /> */}
         <Image src={waveIcon} className="w-12 h-12 ml-1 -mt-4" alt="Wave Icon" />,
         </h1>
