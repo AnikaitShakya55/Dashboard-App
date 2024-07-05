@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React,{useState} from "react";
 import { FiSearch } from "react-icons/fi";
 import './DashBoardContent.css';
 
@@ -72,6 +74,31 @@ const currentCustomers = [
 ];
 
 const DashBoardContent = () => {
+  
+  const [searchTerm , setSearchTerm ] = useState("");
+  const [filterCustomers , setFilterCustomers] = useState(currentCustomers);
+  
+  const handleSearch = (event) => {
+    const searchTerm = event.target.value;
+    setSearchTerm(event.target.value);
+
+    if (searchTerm ==="")
+    {
+      setFilterCustomers(currentCustomers)
+    }
+    else
+    {
+         
+      const filtered = currentCustomers.filter((customer) =>
+      customer.customerName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilterCustomers(filtered);
+    }
+
+   
+  };
+ 
+
   return (
     <div className="flex flex-row ml-20 mt-4 w-[968px] h-[812px]  absolute top-[308px]">
       <div>
@@ -87,6 +114,8 @@ const DashBoardContent = () => {
             type="text"
             placeholder="Search"
             className="border-opacity-35 h-7 w-32 ml-2"
+            value={searchTerm}
+            onChange={handleSearch}
           />
         </div>
 
@@ -115,7 +144,7 @@ const DashBoardContent = () => {
             </tr>
           </thead>
           <tbody>
-            {currentCustomers.map((customer) => (
+            {filterCustomers.map((customer) => (
               <tr key={customer.name} className="text-sm ">
                 <td className="pl-0 pt-8">{customer.customerName}</td>
                 <td className="pl-7 pt-8">{customer.company}</td>
